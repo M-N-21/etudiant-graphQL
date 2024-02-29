@@ -17,9 +17,8 @@ public class EtudiantGraphQL {
 	@Bean
 	CommandLineRunner commandLineRunner(EtudiantRepository etudiantRepository){
 		return args -> {
-			etudiantRepository.save(Etudiant.builder().nom("Diallo").prenom("Boubacar").email("diallo@gmail.com").build());
-			etudiantRepository.save(Etudiant.builder().nom("Diallo").prenom("Ousmane").email("ousmane@gmail.com").build());
-			etudiantRepository.save(Etudiant.builder().nom("Diallo").prenom("Ahmad").email("ahmad@gmail.com").build());
+			etudiantRepository.save(Etudiant.builder().nom("Ndiaye").prenom("Mody").email("mody@gmail.com").build());
+			etudiantRepository.save(Etudiant.builder().nom("Ba").prenom("Bouba").email("ba@gmail.com").build());
 		};
 	}
 
